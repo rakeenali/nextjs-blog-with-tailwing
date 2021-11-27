@@ -1,11 +1,12 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import Layout from "../components/Layout";
 
 const HomePage: NextPage = () => {
   return (
-    <div className="bg-blue-500">
+    <Layout>
       <h1>Blog</h1>
-    </div>
-  )
-}
+    </Layout>
+  );
+};
 
-export default HomePage
+export default HomePage;
