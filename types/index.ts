@@ -4,7 +4,7 @@ export interface IPost {
   content: string;
 }
 
-interface IFrontMatter {
+export interface IFrontMatter {
   author: string;
   author_image: string;
   category: string;

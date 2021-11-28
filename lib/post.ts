@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { IPost } from "../types";
 import { sortByDate } from "../utils";
 
-const files = fs.readdirSync(path.join("posts"));
+export const files = fs.readdirSync(path.join("posts"));
 
 export const getPosts = () => {
   const posts = files.map((filename) => {
