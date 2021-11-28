@@ -19,8 +19,8 @@ export default function handler(
   let posts: IPosts[];
 
   if (process.env.NODE_ENV === "production") {
-    //@todo - fetch from cache
-    posts = [];
+    // fetch from cache
+    posts = require("../../cache/data").posts;
   } else {
     posts = files.map((filename) => {
       const slug = filename.replace(/\.md$/, "");
